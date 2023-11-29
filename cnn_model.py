@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
 # Set device (GPU if available, else CPU)
-#device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Define transformations for the images
 transform = transforms.Compose([
